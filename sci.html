@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIENCE-Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<style>
+    .maincont{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-control{
+      border-color: black;
+    }
+    body{
+        background: linear-gradient(90deg, #7BC9FF,#B3C8CF);
+    }
+
+    .color{
+      background: linear-gradient(90deg, #F7C566,#E59BE9);
+    }
+
+    .text{
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
+      
+    }
+
+    .story{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 15%;
+      margin-left: 15%;
+    }
+
+    .h5{
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      .answer{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+      }
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-inverse navbar-fixed-top color">
+        <div class="container-fluid">
+          <a class="navbar-brand" >AP-SCI-Quiz</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="ap.html">Araling Panlipunan</a>
+              <a class="nav-link" href="sci.html">Science</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <br>
+    
+    <!--tITLE AND INSTRUCTIONS-->
+    <h3 style="text-align: center;">Science</h3>
+    <h5 class = "h5">Pag-aralan ang mga larawan. Tukuyin ang posisyon ng isang bagay batay sa reference point o pinagbabatayan ng posisyon. Piliin ang titik ng tamang sagot.</h5S>
+    
+    <br>
+    <br>
+    
+
+
+  <form>
+
+    <!--divs for MTB-->
+    <div id = "mathematics" class = "maincont">
+
+      <div class="mb-3 answer" >
+        <br>
+        <label class="form-label text"><strong>Pangalan</strong></label>
+        <input type="text" class="form-control " id="name" aria-describedby="emailHelp">
+      </div>
+
+
+      <!--MTB Q1-->
+      <img src="img1.jpg" class="img-fluid" alt="connectivity_problem">
+      <br>
+      <div class="mb-3 answer" >
+        <label class="form-label text"><strong>1. Batay sa larawan. Kung ang batang nakasuot ng green ang reference point o pagbabatayan, ano ang posisyon ng kabinet?</strong></label>
+        <select class="form-select answer" id = "ans1" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Nasa likod ng batang nakagreen</option>
+            <option value="B">B. Nasa harap ng batang nakagreen</option>
+            <option value="C">C. Nasa gilid ng batang nakagreen</option>
+        </select>
+      </div>
+
+      <!--MTB Q2-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>2. Batay sa larawan, kung ang batang nakapula ang reference point. Ano ang posisyon ng batang naka Pink?</strong></label>
+        <select class="form-select answer" id = "ans2" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Nasa gilid ng batang nakapula.</option>
+            <option value="B">B. Nasa harapan ng batang nakapula.</option>
+            <option value="C">C. Nasa gilid ng batang nakapula.</option>
+        </select>
+      </div>  
+
+      <!--MTB Q3-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>3. Batay sa larawan, kung ang batang naka Pink ang reference point. Ano ang posisyon ng Green na libro.</strong></label>
+        <select class="form-select answer" id = "ans3" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Nasa gilid ng batang nakapink.</option>
+            <option value="B">B. Nasa harapan ng batang nakapink.</option>
+            <option value="C">C. Nasa likod ng batang nakapink.</option>
+        </select>
+      </div>  
+
+      <!--MTB Q4-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>4.Anong energy ang kailangan upang umandar ang electric fan?</strong></label>
+        <select class="form-select answer" id = "ans4" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Wind Energy</option>
+            <option value="B">B. Light Energy</option>
+            <option value="C">C. Electrical Energy</option>
+        </select>
+      </div>  
+
+      <!--MTB Q5-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>5.Ano-ano ang mga energy na ibinibigay ng nakasinding kandila?</strong></label>
+        <select class="form-select answer" id = "ans5" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Sound and Light Energy</option>
+            <option value="B">B. Light and Electrical Energy</option>
+            <option value="C">C. Light and Heat Energy </option>
+        </select>
+      </div>  
+
+      <button type="button" id = "engbtn" class="btn btn-primary">Submit</button>  
+    </div>
+      
+    
+  </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="sci.js" ></script>
+</body>
+</html>
